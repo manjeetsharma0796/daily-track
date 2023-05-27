@@ -1,6 +1,6 @@
-#27 May 2023
+# 27 May 2023
 
-#TLDR: 
+# TLDR: 
 -Javscript Nodejs
     -test development
     -DI(Dependency Injection)
