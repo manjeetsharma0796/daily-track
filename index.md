@@ -1,8 +1,2 @@
 [Learnings](/journal/learnings)
-# 27 May 2023
-
-# TLDR: 
--Javscript Nodejs
-    -test development
-    -DI(Dependency Injection)
-    -IOC(Inversion of control)
+[Self-Learning](/journal/self-learnings)
