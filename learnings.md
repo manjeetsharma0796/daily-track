@@ -1,13 +1,5 @@
 # 27 May 2023
 
-## TLDR: 
-
-- Javscript Nodejs
-
-    - test development
-    - DI(Dependency Injection)
-    - IOC(Inversion of control)
-
 > Start of Learning
 
   - Javascript Nodejs
@@ -33,4 +25,5 @@
       - some basic formatting and adding links, inlinks and images
       - creating table and alignment
       - to host our own github pages
- 
+
+> End of learning 
