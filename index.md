@@ -1,4 +1,4 @@
-[Learnings](/daily-updates/learnings)
+[Learnings](/journal/learnings)
 # 27 May 2023
 
 # TLDR: 
