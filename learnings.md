@@ -21,7 +21,7 @@
   
       - making io, calc, repl
       - testing for io and calc and repl
-      - insight and discussion about good practices of unit test[link](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+      - insight and discussion about good practices of unit test [microsoft](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
       - to recollect ideas and discuss with others
       - also to look back into github commits to understand the evolution of code 
       - code snippets refer
