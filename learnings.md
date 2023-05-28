@@ -22,4 +22,13 @@
       - making io, calc, repl
       - testing for io and calc and repl
       - insight and discussion about good practices of unit test[link](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
-      - to recollect ideas => discuss with others
+      - to recollect ideas and discuss with others
+      - also to look back into github commits to understand the evolution of code 
+  
+  - Jayant session
+        
+      - introduction to markdown
+      - some basic formatting and adding links, inlinks and images
+      - creating table and alignment
+      - to host our own github pages
+ 
