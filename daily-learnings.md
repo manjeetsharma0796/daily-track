@@ -7,11 +7,11 @@
       - testing dependencies
       - mock functions
       - testing functions but with valid export reason of that function (good guideline)
-      - wc
+      - wc a terminal command to implement using node js
       
   - Swamiji session
   
-      - making io, calc, repl
+      - building io, calc, repl
       - testing for io and calc and repl
       - insight and discussion about good practices of unit test [microsoft](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
       - to recollect ideas and discuss with others
