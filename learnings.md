@@ -24,6 +24,8 @@
       - insight and discussion about good practices of unit test[link](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
       - to recollect ideas and discuss with others
       - also to look back into github commits to understand the evolution of code 
+      - code snippets refer
+        - [sauma](https://saumasaha.github.io/todayilearned/)     
   
   - Jayant session
         
