@@ -1,4 +1,4 @@
-- [Learnings](/journal/learnings)
+- [Daily-Learnings](/journal/daily-learnings)
 
 - [Books that I read so far](/journal/books)
 
