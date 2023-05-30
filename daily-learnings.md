@@ -1,7 +1,5 @@
 # 27 May 2023
 
-> Start of Learning
-
   - Javascript Nodejs
   
       - testing dependencies
@@ -26,4 +24,32 @@
       - creating table and alignment
       - to host our own github pages
 
-> End of learning 
+-----
+
+# 30 May 2023
+
+  - Presentation til now
+    - BP => Geetanjali & Gayatri 
+    - Azhar, Sneha, Prafulla and Sapna
+    - National Grid => Aashrita
+    - NPCI => Rishav 
+    - UBS => 
+      - Infra Consultant => Prafulla, 
+      - Team Nemo => Chhavi
+      - Team Shark => Annakamma
+    - Seek => 
+      - Team Sumo => Suresh
+    - Metro => Prajakta
+    - Atlassian => Lakshmi and Subhash
+    - E4R => 
+      - YASKA => Nitin 
+      - DIC => Manikanta
+
+## Some common keywords used in projects (will soon include their meaning)
+POC - Proof Of Concept
+Hotfix
+QA
+KT - Knowledge Transfer. People share their coding knowledge to others
+Starters - Giving detail about what have been done till now
+Retros - Doing reflection session with team members to find out progress and issues
+Interfencing Pipeline 
