@@ -46,10 +46,10 @@
       - DIC => Manikanta
 
 ## Some common keywords used in projects (will soon include their meaning)
-POC - Proof Of Concept
-Hotfix
-QA
-KT - Knowledge Transfer. People share their coding knowledge to others
-Starters - Giving detail about what have been done till now
-Retros - Doing reflection session with team members to find out progress and issues
-Interfencing Pipeline 
+- POC - Proof Of Concept
+- Hotfix
+- QA
+- KT - Knowledge Transfer. People share their coding knowledge to others
+- Starters - Giving detail about what have been done till now
+- Retros - Doing reflection session with team members to find out progress and issues
+- Interfencing Pipeline 
