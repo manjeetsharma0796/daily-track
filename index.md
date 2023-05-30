@@ -1,6 +1,6 @@
-- [Daily-Learnings](/journal/daily-learnings)
+- [Daily-Learnings](/notes/daily-learnings)
 
-- [Books that I read so far](/journal/books)
+- [Books that I read so far](/notes/books)
 
 > Index of Learnings
 
