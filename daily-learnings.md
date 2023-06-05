@@ -28,7 +28,7 @@
 
 # 30 May 2023
 
-  - Presentation til now
+  - Presentation till now
     - BP => Geetanjali & Gayatri 
     - Azhar, Sneha, Prafulla and Sapna
     - National Grid => Aashrita
@@ -53,3 +53,21 @@
 - Starters - Giving detail about what have been done till now
 - Retros - Doing reflection session with team members to find out progress and issues
 - Interfencing Pipeline 
+
+-------
+
+# 3 June 2023
+
+- Presentations (2)
+  - McKindsey => Ritika(3 months)
+  - Mercedes => Tanmay, Swapnil, Vivek, Nilam
+  
+## Takeaways
+- Billable - when client pays to company for some recognizable work which is professional.
+- Not everyone becomes billable 
+- You may have to present a feature to client and your team members too.
+- Seek for other opportunity to increase your learnings
+- There may be delay in access, but in the meantime try to get context of the project you're working on. It will boost the work progress later and won't take too much time.
+- People may delay in response, so have patience.
+- Always avoid code push in hurry
+- Not all meetings are necessary to attend, so get info about the necessary meetings that are necessary.
