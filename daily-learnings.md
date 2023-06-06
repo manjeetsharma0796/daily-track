@@ -71,3 +71,26 @@
 - People may delay in response, so have patience.
 - Always avoid code push in hurry
 - Not all meetings are necessary to attend, so get info about the necessary meetings that are necessary.
+
+-----------
+
+# 5 June 2023
+
+- Ashish Session
+  - we learnt about event
+  - we saw the usage of createReadStream, how we can use in file
+  - also covered eventEmitter
+    - eventEmitter.on
+    - eventEmitter.emit
+- Seniors showed their games that they build before entering into projects
+  - Scotland Yard
+  - Cashflow
+  - Cluedo
+  - Acquire
+
+- Common challanges and takeaways
+  - Collaboration with others
+  - there will be sprint of three days, showcase to show your demo and progress
+  - it will be a highly competitive and intensive learning process
+  - there will be QA, BA, Developer roles switching, in order to get the experience
+ 
