@@ -93,4 +93,38 @@
   - there will be sprint of three days, showcase to show your demo and progress
   - it will be a highly competitive and intensive learning process
   - there will be QA, BA, Developer roles switching, in order to get the experience
+
+------------
+
+# 6 June 2023
+
+- Presentation 
+  - tdm => Sakshi
+    - Domain is related to maintaining stock market data
+  - Axis => Abin, Sampriti, Sanjana, Prem
+    - Domain related to banking website and introducing new loan
+    - they also had to maintain the RBI guideline and complete requirement within time
+  - Takeaway
+    - maintain work life balance
+    - make friends, it will help to cover task easily and it smooth
+    - take ownership and responsibily of your work
+    - be ready to adapt in new changes
+- Swamiji games show
+  - one was about insects moivng around in screen
+  - pad ball => save the ball from falling down
+  - learning part
+    - stdout has many things that are helpful like
+      - getWindowSize() 
+      - cursorTo() => moves the cursor to the specified position
+      - clearScreenDown 
+      - we also see the rows and columns
+  
+ -----------
+ # 7 June 2023
+ 
+ - we tried to create trafficRider game with Swagato and Biswa
+ - learning part
+  - there was line where the program was potential to crash if invalid move is provided 
+  - safety point of program from being crash
+  - we can do 'key in objectName', it will return true or false
  
