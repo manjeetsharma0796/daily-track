@@ -122,9 +122,239 @@
  -----------
  # 7 June 2023
  
- - we tried to create trafficRider game with Swagato and Biswa
+ - tried to create trafficRider game with Swagato and Biswa
  - learning part
   - there was line where the program was potential to crash if invalid move is provided 
   - safety point of program from being crash
   - we can do 'key in objectName', it will return true or false
+
+ ------------ 
+ # 10 June 2023
  
+ - learned that testing provides async testing
+    - the second parameter of test is usually for that purpose
+    - if we invoke the parameter that we passed, it means that I have done with running async function now you assert
+    - also learned about context
+    - there is calls, callCount, and under count there is arguments which shows what parameter has been passed
+
+ - Jayanth Session
+    - showed us about a way to approach to think of model , controller and viewer
+    - i was surprised that without board we are able to play tictactoe, board wasn't the main 
+    - we were able to understand the structuring of model, and it's easy to test without injecting
+    - we tried to think in terms of entity, how independent they are
+    - controller doesn't hold the logic part, it's just a medium to interact with your game   
+    - code snippet
+    
+     ```javascript
+        const { EventEmitter } = require('events');
+        
+        const Symbols = { X: 'X', O: 'O', EMPTY: ' ' };
+        
+        class Player {
+          #name;
+          #moves;
+          #symbol;
+          constructor(name, symbol) {
+            this.#name = name;
+            this.#symbol = symbol;
+            this.#moves = new Set();
+          }
+        
+          recordMove(move) {
+            this.#moves.add(move);
+          }
+        
+          getDetails() {
+            return this.#name;
+          }
+        
+          numberOfMoves() {
+            return this.#moves.size;
+          }
+        
+          movesMade() {
+            return [...this.#moves].map(move => [move, this.#symbol]);
+          }
+        }
+        
+        class Players {
+          #players;
+          constructor(player1, player2) {
+            this.#players = [player1, player2];
+          }
+        
+          changeTurn() {
+            this.#players.reverse();
+          }
+        
+          recordMove(move) {
+            this.#players[0].recordMove(move);
+          }
+        
+          getCurrentPlayer() {
+            // try not to break encapsulation?
+            return this.#players[0].getDetails();
+          }
+        
+          totalMovesMade() {
+            return this.#players
+              .map(player => player.numberOfMoves())
+              .reduce((a, b) => a + b);
+          }
+        
+          hasWon() {
+            return false;
+          }
+        
+          movesMade() {
+            return Object.fromEntries(
+              this.#players.flatMap(player => player.movesMade())
+            );
+          }
+        }
+        
+        class Game {
+          #players;
+          #isGameOver;
+          #winner;
+          constructor(players) {
+            this.#players = players;
+          }
+        
+          makeMove(move) {
+            this.#players.recordMove(move);
+          
+            if (this.#players.hasWon()) {
+              this.#isGameOver = true;
+              this.#winner = this.#players.getCurrentPlayer();
+              return;
+            }
+          
+            if (this.#players.totalMovesMade() === 9) {
+              this.#isGameOver = true;
+              return;
+            }
+          
+            this.#players.changeTurn();
+          }
+        
+          status() {
+            return {
+              moves: this.#players.movesMade(),
+              currentPlayer: this.#players.getCurrentPlayer(),
+              isGameOver: this.#isGameOver,
+              winner: this.#winner,
+            };
+          }
+        }
+        
+        class GameController {
+          #game;
+          #inputController;
+          #renderer;
+          constructor(game, inputController, renderer) {
+            this.#game = game;
+            this.#inputController = inputController;
+            this.#renderer = renderer;
+          }
+        
+          start() {
+            this.#inputController.on('move-entered', move => {
+              this.#game.makeMove(move);
+              this.#renderer.render(this.#game.status());
+            });
+          
+            this.#inputController.on('illegal-move', move => {
+              console.log('Illegal move entered!');
+            });
+          
+            this.#inputController.start();
+          }
+        }
+        
+        class KeyboardController extends EventEmitter {
+          #stdin;
+          #keymap;
+          constructor(stdin, keymap) {
+            super();
+            this.#stdin = stdin;
+            this.#keymap = keymap;
+          }
+        
+          start() {
+            this.#stdin.setRawMode(true);
+            this.#stdin.setEncoding('utf-8');
+            this.#stdin.on('data', data => {
+              if (data === '\u0003') {
+                this.#stdin.setRawMode(false);
+                return;
+              }
+              if (this.#keymap[data] === undefined) {
+                this.emit('illegal-move');
+                return;
+              }
+              const [event, eventData] = this.#keymap[data];
+              this.emit(event, eventData);
+            });
+          }
+        }
+        
+        class GameRenderer {
+          render({ moves, currentPlayer }) {
+            for (let i = 0; i < 9; i += 3) {
+              const row = [i, i + 1, i + 2].map(x => moves[x] || ' ').join('|');
+              console.log(row);
+            }
+            console.log('');
+            console.log(currentPlayer, "'s turn");
+          }
+        }
+        
+        module.exports = {
+          Player,
+          Players,
+          Game,
+          GameController,
+          Symbols,
+          KeyboardController,
+          GameRenderer,
+        };
+    ```
+    and the main.js
+
+  ```javascript
+    const {
+      Symbols,
+      Game,
+      GameController,
+      Player,
+      Players,
+      KeyboardController,
+      GameRenderer,
+    } = require('./ttt.js');
+    // const EventEmitter = require('events');
+    
+    const keymap = {
+      q: ['move-entered', 0],
+      w: ['move-entered', 1],
+      e: ['move-entered', 2],
+      a: ['move-entered', 3],
+      s: ['move-entered', 4],
+      d: ['move-entered', 5],
+      z: ['move-entered', 6],
+      x: ['move-entered', 7],
+      c: ['move-entered', 8],
+    };
+    
+    const main = () => {
+      const p1 = new Player('bittu', Symbols.X);
+      const p2 = new Player('riya', Symbols.O);
+      const players = new Players(p1, p2);
+      const game = new Game(players);
+      const keyboardController = new KeyboardController(process.stdin, keymap);
+      const gc = new GameController(game, keyboardController, new GameRenderer());
+      gc.start();
+    };
+    
+    main();
+  ```
