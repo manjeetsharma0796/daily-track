@@ -358,3 +358,39 @@
     
     main();
   ```
+  
+----------
+12 June 2023
+
+Ashish and Dheeraj session about HTML
+  - Before writing anything the whole thing is inside html tag
+  - There are tags like head, body, table etc
+  - In table tags there are other tags like
+      - table row
+      - table data
+  - There are listing tags also 
+      - ordered list 
+      - unordered list
+      - list tag needs to be included to list down items
+  - There is anchor tag
+      - We can use it to give hytext links
+  - We came to know that tags have their attributes
+    - attributes like style inside which we can select font size and color, border size type and color
+    - you can separate the same properties by spaces and others by semicolons
+    - for border  (example)
+       - style="border: 1px solid black; // here it is separated by spaces
+  - learned about pre which keeps the text as it is
+
+----------
+13 June 2023
+
+Ashish and Dheeraj session about HTML 02
+  - Learned about img tag in HTML
+  - need to mention src 
+    - it can be local or online source
+  - in case you add alt which is alternative source or text you want to show in case the first source doesn't works
+  - we made wikipedia
+
+------------
+
+14 June 2023
