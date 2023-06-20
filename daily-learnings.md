@@ -393,4 +393,29 @@ Ashish and Dheeraj session about HTML 02
 
 ------------
 
-14 June 2023
+20 June 2023
+
+Suresh session about html
+
+1st Half the topics we have covered
+  - creating css files and linking it
+  - discussed about rgba, hsl
+  - we came to know about that if height is mentioned then we can mention the width via aspect ratio
+  - CSS specificity
+  - Related to Background
+      - Image
+      - Gradient (linear gradient to be specific)
+      - Size
+      - Repeat
+      - Clip
+        - -webkit (to make it compatible to other browser)
+
+2nd Half the topics we have covered
+  - box-shadow 
+    - it consist of two co-ordinates, the widespread of the shadow effect and the color you want
+  - position
+    - absolute (it takes reference of the increment of co-ordinate from the corner of the screen also it removes the element)
+    - relative (it take reference from the initial position of the element and it doesn't remove the space taken by it)
+    - fixed (it remains stay on the screen and it overlap if any other element comes)
+    - sticky (it stays on the screen on given co-ordinates as long as the parent has scrollable area) 
+
